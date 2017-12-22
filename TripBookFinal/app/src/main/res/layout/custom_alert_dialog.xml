@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="150dp"
+    android:minHeight="150dp"
+    android:padding="10dp"
+    android:background="@color/common_google_signin_btn_text_dark_disabled">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGrpCustom">
+
+        <RadioButton
+            android:text="Add to Trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonTripAdd"
+            android:layout_weight="0.40" />
+
+        <RadioButton
+            android:text="Add to Wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonWishlistAdd"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCustomCancel"
+            android:layout_weight="0.24"
+            android:background="?android:attr/colorPressedHighlight"
+            android:layout_margin="1dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCustomAdd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="?android:attr/colorPressedHighlight"
+            android:layout_margin="1dp"
+            android:layout_weight="0.24" />
+
+    </LinearLayout>
+
+</LinearLayout>

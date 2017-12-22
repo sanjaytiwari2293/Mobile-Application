@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyFavoriteGames</string>
+
+
+    <string-array name="array_name">
+        <item>Select One</item>
+        <item>Action</item>
+        <item>Arcade</item>
+        <item>Mission</item>
+        <item>Racing</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="set_btn">Set Current City</string>
+    <string name="search_btn">Search</string>
+    <string name="headline_tv">Headline</string>
+    <string name="cond_tv">Condition</string>
+    <string name="day_tv">Day</string>
+    <string name="night_tv">Night</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cel_radio">Celsius</string>
+    <string name="fah_radio">Fahrenheit</string>
+    <string name="done_btn">Done</string>
+    <string name="click_more_tv">Click here for more details</string>
+    <string name="click_ext_tv">Click here for extented forecast</string>
+</resources>

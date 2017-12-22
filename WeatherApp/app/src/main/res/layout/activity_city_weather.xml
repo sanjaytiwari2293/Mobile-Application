@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_city_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sanja.weatherapp.CityWeatherActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDailyForecast"
+        android:textColor="#00FFFF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewHeadline"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewTempMinMax"
+        android:layout_below="@+id/textViewForecastOnDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="@string/cond_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTempMinMax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view"
+        android:background="#00FFFF"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textViewDailyForecast"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/headline_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/day_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textViewTempMinMax"
+        android:id="@+id/textView7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="@string/night_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/textView8"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/textView6" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageViewDay"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:padding="4dp"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageViewNight"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:layout_above="@+id/textViewNightPhrase"
+        android:layout_below="@+id/textView8" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDayPhrase"
+        android:layout_below="@+id/imageViewDay"
+        android:layout_alignEnd="@+id/imageViewDay"
+        android:layout_alignStart="@+id/imageViewDay"
+        android:padding="2dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:gravity="center" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewDay"
+        android:layout_alignEnd="@+id/imageViewNight"
+        android:id="@+id/textViewNightPhrase"
+        android:layout_alignStart="@+id/imageViewNight"
+        android:padding="2dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/relativeLayout1"
+        android:layout_marginBottom="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/recyclerView"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/click_ext_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewExtForecast"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewForecastOnDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textViewHeadline"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/click_more_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMoreDetails"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+</RelativeLayout>
